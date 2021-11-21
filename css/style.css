@@ -508,7 +508,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 13px;
   padding-bottom: 70px;
 }
 
@@ -562,6 +562,7 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  letter-spacing: -0.15em;
 }
 
 .offer {
