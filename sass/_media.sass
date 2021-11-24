@@ -3,15 +3,13 @@
     max-width: 960px
   .slider
     width: 590px
-    height: auto
-    img
-      width: 100%
-      height: 100%
+    
+    
   .swiper
     &-slide
       &__image
         width: 100%
-        height: auto
+        height: 100%
         object-fit: cover
 
 
@@ -93,7 +91,12 @@
         order: -1
         margin-left: 0 
   .slider
-    height: 350px
+    max-height: 350px
+  .swiper
+    max-height: 350px  
+    &-slide
+      max-weight: 300
+      height: 100%
   .hotel
     &-right
       flex-direction: column
@@ -101,7 +104,13 @@
   .booking
     width: 100%
   .map
-    width: 100%        
+    width: 100% 
+  .newsletter
+    &-wrapper
+      max-width: 576px
+      width: 92%
+      flex-direction: column
+      align-items: flex-start         
     
 
 @media (max-width: 576px) 
@@ -110,7 +119,8 @@
   .slider
     max-height: 300px
     margin-bottom: 20px 
-
+  .swiper
+    max-height: 300px
 
 @media (max-width: 320px) 
   .logo
@@ -118,7 +128,8 @@
     line-height: 13px   
   .slider
     max-height: 155px
-               
+  .swiper
+    max-height: 155px             
 
        
       
