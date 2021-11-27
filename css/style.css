@@ -505,7 +505,7 @@ template {
 
 .hotel {
   padding-top: 13px;
-  padding-bottom: 70px;
+  padding-bottom: 69px;
 }
 
 .hotel-info {
@@ -522,7 +522,7 @@ template {
 }
 
 .hotel-info__offer {
-  margin-left: 14px;
+  margin-left: 15px;
   margin-top: 4px;
 }
 
@@ -661,6 +661,7 @@ template {
   color: #ffff;
   background-color: #EC1F46;
   border-radius: 4px;
+  margin-top: 10px;
 }
 
 .rating__text {
@@ -680,7 +681,7 @@ template {
   border-radius: 8px;
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 30px 28px 28px 27px;
 }
 
 .booking__info {
@@ -690,7 +691,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .booking__price {
@@ -720,11 +721,12 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 9px;
 }
 
 .booking__room {
   margin-top: 4px;
+  margin-right: 8px;
 }
 
 .booking__text {
@@ -737,15 +739,15 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 21px;
 }
 
 .booking__description {
-  margin-left: 9px;
+  margin-left: 8px;
 }
 
 .booking__call-center {
@@ -813,7 +815,7 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 98px 0 87px 0;
+  padding: 80px 0 67px 0;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -868,6 +870,7 @@ template {
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
+  margin-left: 140px;
 }
 
 .subscribe__input {
@@ -893,10 +896,11 @@ template {
   background-color: #EC1F46;
   color: #ffff;
   cursor: pointer;
+  font-size: 11px;
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 10px 0 70px 0;
 }
 
 .reviews__title {
@@ -952,7 +956,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -969,11 +973,13 @@ template {
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
   left: 0;
+  margin-left: 15px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
   right: 0;
+  margin-right: 17px;
 }
 
 .reviews-slider__profile {
@@ -988,7 +994,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
-  margin-bottom: 30px;
+  margin-bottom: 11px;
 }
 
 .reviews-slider__avatar {
@@ -997,7 +1003,7 @@ template {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 9px;
+  margin-bottom: -2px;
 }
 
 .reviews-slider__username {
@@ -1007,6 +1013,7 @@ template {
   line-height: 15px;
   color: #EC1F46;
   margin-bottom: 10px;
+  padding-left: 3px;
 }
 
 .reviews-slider__date {
@@ -1018,15 +1025,15 @@ template {
 }
 
 .reviews-slider__rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -6px;
+  letter-spacing: -0.15em;
 }
 
 .reviews-slider__text {
+  font-family: "Mulish";
   max-width: 537px;
   font-style: normal;
   font-weight: normal;
@@ -1034,6 +1041,7 @@ template {
   line-height: 160%;
   text-align: justify;
   margin: auto;
+  letter-spacing: 0.001em;
 }
 
 @media (max-width: 1200px) {

@@ -1,5 +1,5 @@
 .reviews
-  padding: 40px 0 70px 0
+  padding: 10px 0 70px 0
   &__title
     font-style: normal
     font-weight: bold
@@ -39,7 +39,7 @@
         background-repeat: no-repeat
     &__button
       position: absolute
-      top: 50%
+      top: 45%
       transform: translateY(-50%)
       width: 30px
       height: 30px
@@ -53,21 +53,23 @@
       &--prev
         background-image: url(../img/arrow-prev-secondary.svg)
         left: 0
+        margin-left: 15px
       &--next
         background-image: url(../img/arrow-next-secondary.svg)
         right: 0
+        margin-right: 17px
     &__profile
       display: flex
       flex-direction: column
       align-items: center
       margin-top: -45px
-      margin-bottom: 30px
+      margin-bottom: 11px
     &__avatar
       width: 90px
       height: 90px
       border-radius: 50%
       object-fit: cover
-      margin-bottom: 9px
+      margin-bottom: -2px
     &__username
       font-style: normal
       font-weight: bold
@@ -75,6 +77,7 @@
       line-height: 15px
       color: $primary
       margin-bottom: 10px
+      padding-left: 3px
     &__date
       font-style: normal
       font-weight: normal
@@ -82,9 +85,12 @@
       line-height: 13px
       margin-bottom: 4px
     &__rating
-      display: flex
+      display: 
       align-items: center
+      margin-top: -6px
+      letter-spacing: -0.15em
     &__text
+      font-family: "Mulish"
       max-width: 537px
       font-style: normal
       font-weight: normal
@@ -92,3 +98,4 @@
       line-height: 160%
       text-align: justify
       margin: auto
+      letter-spacing: 0.001em
