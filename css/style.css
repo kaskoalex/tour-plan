@@ -1258,7 +1258,7 @@ template {
     height: 251px;
   }
   .card__title {
-    margin-right: 86px;
+    margin-right: 56px;
   }
 }
 
@@ -1423,6 +1423,16 @@ template {
   }
   .hotel-slider {
     height: 179px;
+  }
+  .hotel-slider__button {
+    width: 8px;
+    height: 8px;
+  }
+  .hotel-slider__button--next {
+    right: 8px;
+  }
+  .hotel-slider__button--prev {
+    left: 8px;
   }
   .hotel-info {
     padding-bottom: 38px;
