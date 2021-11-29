@@ -1514,6 +1514,13 @@ template {
   }
 }
 
+@media (max-width: 420px) {
+  .newsletter-title__strong {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 @media (max-width: 320px) {
   .logo {
     font-size: 13px;
@@ -1524,6 +1531,19 @@ template {
   }
   .swiper {
     max-height: 155px;
+  }
+  .newsletter {
+    padding: 63px 5px 82px 5px;
+    width: 80%;
+  }
+  .newsletter-title {
+    font-size: 11px;
+    margin-bottom: 13px;
+  }
+  .newsletter-title__strong {
+    font-size: 15px;
+    line-height: 12px;
+    margin-top: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */
