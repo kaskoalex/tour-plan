@@ -1372,17 +1372,11 @@ template {
     top: 32px;
   }
   .reviews-slider__button--prev {
-    left: 50%;
-    -webkit-transform: translate -50%, 0;
-            transform: translate -50%, 0;
-    margin-left: -75px;
+    margin-left: 146px;
     top: 46px;
   }
   .reviews-slider__button--next {
-    right: 50%;
-    -webkit-transform: translate 50%, 0;
-            transform: translate 50%, 0;
-    margin-right: -75px;
+    margin-right: 146px;
     top: 47px;
   }
   .activities {
@@ -1480,11 +1474,11 @@ template {
     top: 32px;
   }
   .reviews-slider__button--prev {
-    margin-left: -106px;
+    margin-left: 56px;
     top: 46px;
   }
   .reviews-slider__button--next {
-    margin-right: -106px;
+    margin-right: 56px;
     top: 47px;
   }
   .card {
@@ -1519,6 +1513,17 @@ template {
     max-width: 379px;
     padding-left: auto;
     padding-right: auto;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    margin-left: 42px;
+    top: 46px;
+  }
+  .reviews-slider__button--next {
+    margin-right: 42px;
+    top: 47px;
   }
 }
 /*# sourceMappingURL=style.css.map */
