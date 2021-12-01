@@ -19,6 +19,14 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке Меню");
+  document
+  .querySelector(".navbar-bottom")
+  .classList.toggle("navbar-bottom--visible")
+});
+
 
 const reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
