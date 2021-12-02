@@ -285,13 +285,14 @@
         </h2>
 
         <!-- /.subscribe -->
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="youremailaddress"
           />
-          <button class="subscribe__button">Send</button>
+          <button type="submit" class="subscribe__button">Send</button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
