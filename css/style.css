@@ -1921,6 +1921,7 @@ template {
   .footer-wrapper {
     -ms-grid-rows: 80px 80px 140px 160px 200px 330px 470px 80px;
         grid-template-rows: 80px 80px 140px 160px 200px 330px 470px 80px;
+    grid-column-gap: 0;
   }
   .footer__input {
     -ms-flex-preferred-size: 49%;
@@ -2016,7 +2017,7 @@ template {
 
 @media (max-width: 420px) {
   .container {
-    max-width: 80%;
+    max-width: 100%;
   }
   .newsletter-title__strong {
     font-size: 20px;
@@ -2093,7 +2094,7 @@ template {
   }
   .footer__conditions-links {
     margin-right: 60px;
-    width: 270px;
+    width: 100%;
   }
   .footer__formpay {
     margin-left: 0;
