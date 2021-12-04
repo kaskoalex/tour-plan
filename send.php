@@ -18,9 +18,9 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
 <b>Адресс электронной почты</b><br>
-$youremailaddress
+$youremailaddress<br>
+<b>Сообщение:</b><br>$message
 
 ";
 
@@ -36,7 +36,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'karambala39'; // Логин на почте
-    $mail->Password   = 'h4S-s3f-dHp-e88'; // Пароль на почте
+    $mail->Password   = 'h4S-s3f-dHp-o56'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('karambala39@gmail.com', 'Алекс Шпак'); // Адрес самой почты и имя отправителя
