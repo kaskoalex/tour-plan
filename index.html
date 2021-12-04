@@ -27,7 +27,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -61,26 +64,32 @@
         <div class="container">
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-              <a href="#" class="user navbar__user navbar__user--mobile--visible">
-            <img
-              src="img/user-avatar.jpg"
-              alt="Avatar: Nathan"
-              class="user__avatar"
-            />
-            <span class="user__name user__name-light">Nathan</span>
-          </a>
+              <a
+                href="#"
+                class="user navbar__user navbar__user--mobile--visible"
+              >
+                <img
+                  src="img/user-avatar.jpg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name-light">Nathan</span>
+              </a>
             </li>
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-              <form action="#" class="search navbar__search navbar__search--mobile--visible">
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Search Location"
-            />
-            <button class="search__button">
-              <img src="img/search.svg" alt="Icon: search" />
-            </button>
-          </form>
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile--visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
             </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link" href#="">All Deals</a>
@@ -154,7 +163,7 @@
           </div>
           <!-- /.hotel-info__text -->
 
-          <div class="rating hotel-info__rating">
+          <div data-toggletwo="modaltwo" class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
           </div>
@@ -254,7 +263,9 @@
                 </a>
               </div>
               <!-- /.call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
 
@@ -285,7 +296,11 @@
         </h2>
 
         <!-- /.subscribe -->
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
@@ -676,7 +691,7 @@
               <textarea
                 cols="30"
                 rows="10"
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -688,26 +703,110 @@
         </div>
         <!-- /.footer__wrapper -->
         <div class="footer__conditions">
-            <div class="footer__conditions-wrapper">
-              <div class="footer__conditions-links">
-                <a href="#" class="footer__link">Disclaimer</a>
-                <a href="#" class="footer__link">Conditions of use</a>
-                <a href="#" class="footer__link">Cancellation policy</a>
-              </div>
-              <!-- /.footer__conditions-links -->
-              <div class="footer__formpay">
-                <img src="img/pay.png" alt="icon: pay" />
-              </div>
+          <div class="footer__conditions-wrapper">
+            <div class="footer__conditions-links">
+              <a href="#" class="footer__link">Disclaimer</a>
+              <a href="#" class="footer__link">Conditions of use</a>
+              <a href="#" class="footer__link">Cancellation policy</a>
             </div>
-            <!-- /.footer__conditions-wrapper -->
+            <!-- /.footer__conditions-links -->
+            <div class="footer__formpay">
+              <img src="img/pay.png" alt="icon: pay" />
+            </div>
           </div>
-          <!-- /.footer__conditions -->
-          <!-- /.footer__info-pay -->
+          <!-- /.footer__conditions-wrapper -->
         </div>
+        <!-- /.footer__conditions -->
+        <!-- /.footer__info-pay -->
       </div>
       <!-- /.container -->
     </footer>
 
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title">Booking</h3>
+        <form action="send.php" method="post" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button type="submit" class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modaltwo">
+      <div class="modaltwo__overlay"></div>
+      <!-- /.modal__overlay -->
+
+      <div class="modaltwo__dialog">
+        <a href="#" class="modaltwo__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modaltwo__title">Give us your feedback</h3>
+        <form action="send.php" method="post" class="form modaltwo__form">
+          <input
+            type="text"
+            class="input modaltwo__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modaltwo__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modaltwo__input"
+            placeholder="Email*"
+            name="email"
+          />
+          <textarea
+            class="mytextarea modaltwo__mytextarea"
+            placeholder="👎"
+            name="message"
+          >
+⭐⭐⭐⭐⭐</textarea
+          >
+          <button type="submit" class="button modaltwo__button">Send</button>
+          <span class="modaltwo__info"> Thank You</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal- -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
