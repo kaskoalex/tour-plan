@@ -1821,7 +1821,7 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 78px;
+    top: 72px;
     padding-top: 30px;
   }
   .navbar-bottom--visible {
@@ -2008,6 +2008,9 @@ template {
     line-height: 15px;
     margin-right: 20px;
   }
+  .search {
+    width: 330px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -2016,6 +2019,9 @@ template {
   }
   .footer__title {
     font-size: 15px;
+  }
+  .search__input {
+    width: 310px;
   }
 }
 
@@ -2230,6 +2236,12 @@ template {
     line-height: 15px;
     margin-right: 20px;
   }
+  .navbar__search {
+    margin-left: 5px;
+  }
+  .search__input {
+    width: 290px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -2331,11 +2343,13 @@ template {
     font-weight: 400;
     font-size: 14px;
   }
+  .search {
+    width: 275px;
+  }
 }
 
 @media (max-width: 320px) {
   container {
-    max-width: 379px;
     padding-left: auto;
     padding-right: auto;
   }
@@ -2349,6 +2363,22 @@ template {
   .reviews-slider__button--next {
     margin-right: 42px;
     top: 47px;
+  }
+  .search {
+    width: 243px;
+    margin-bottom: 18px;
+    margin-top: 12px;
+  }
+  .navbar-bottom {
+    padding-top: 15px;
+    margin-bottom: 0;
+    position: fix;
+  }
+  .navbar-menu {
+    padding-top: 13px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */

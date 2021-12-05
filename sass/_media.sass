@@ -162,7 +162,7 @@
       left: 0
       right: 0
       bottom: 0
-      top: 78px
+      top: 72px
       padding-top: 30px
       &--visible
         display: block
@@ -290,7 +290,9 @@
         height: 15px
         font-size: 12px
         line-height: 15px
-        margin-right: 20px  
+        margin-right: 20px
+  .search
+    width: 330px  
 
 @media (max-width: 730px)  
   .container
@@ -298,7 +300,9 @@
   .footer
     &__title
       font-size: 15px         
-  
+  .search
+    &__input
+      width: 310px
             
             
 
@@ -327,21 +331,17 @@
         &--next
           right: 8px       
         &--prev
-          left: 8px
-        
+          left: 8px       
     &-info
       padding-bottom: 38px
     &-right
       min-height: 200px  
   .map
     height: 173px
-    margin-top: 20px  
-     
+    margin-top: 20px    
   .booking
     padding: 30px 18px 28px 25px      
-  
-  .newsletter
-    
+  .newsletter    
     padding: 63px 10px 82px 10px
     &-title
       font-size: 19px
@@ -377,8 +377,7 @@
           top: 47px  
   .card
     width: 100% 
-    margin-bottom: 22px
-    
+    margin-bottom: 22px    
   .activities__title
     font-size: 18px
     margin-bottom: 33px
@@ -442,7 +441,13 @@
         height: 15px
         font-size: 12px
         line-height: 15px
-        margin-right: 20px  
+        margin-right: 20px
+  .navbar
+    &__search
+      margin-left: 5px
+  .search
+    &__input
+      width: 290px            
 
 @media (max-width: 420px)
   .container
@@ -481,9 +486,7 @@
     &__message
       height: 150px 
       flex-basis: auto 
-      width:  100%    
-    &__additional
-            
+      width:  100%   
     &__contact
       &-details
         grid-column: span 2
@@ -499,8 +502,7 @@
         align-items: start        
       &-links
         margin-right: 60px
-        width: 100%       
-          
+        width: 100%     
     &__formpay 
       margin-left: 0   
       &-links
@@ -515,16 +517,19 @@
         font-size: 14px
     &__text
       font-weight: 400
-      font-size: 14px   
-
+      font-size: 14px 
+  .navbar
+    &__search
+      margin-left:     
+  .search
+      width: 275px
               
         
           
 
 
 @media (max-width: 320px) 
-  container, 
-    max-width: 379px
+  container
     padding-left: auto
     padding-right: auto 
   .reviews
@@ -536,8 +541,25 @@
           top: 46px
         &--next
           margin-right: 42px 
-          top: 47px                   
+          top: 47px
+  .search
+      width: 243px 
+      margin-bottom: 18px 
+      margin-top: 12px                 
+  .navbar
+    &-bottom
+      padding-top: 15px
+      margin-bottom: 0
+      position: fix
 
+    &-menu
+      padding-top: 13px
+      &__item
+        margin-bottom: 17px
+        margin-top:
+  .user
+    &__name
+      margin-top:     
        
       
   
