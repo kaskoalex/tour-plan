@@ -95,7 +95,7 @@
               <a href="all-deals.php" class="navbar-menu__link" href#="">All Deals</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link" href#=""> Hotels</a>
+              <a href="hotels.php" class="navbar-menu__link" href#=""> Hotels</a>
             </li>
             <li class="navbar-menu__item">
               <a href="./php/activities.php" class="navbar-menu__link" href#="">Activities</a>
