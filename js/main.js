@@ -57,20 +57,17 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   }
 
-
-
-
   var openButton = $("[data-toggletwo=modaltwo]");
   var closeButton = $(".modaltwo__close");
   openButton.on("click", openModaltwo);
   closeButton.on("click", closeModaltwo);
 
-  function openModaltwo () {
+  function openModaltwo() {
     var modalOverlay = $(".modaltwo__overlay");
     var modalDialog = $(".modaltwo__dialog");
     modalOverlay.addClass("modaltwo__overlay--visible");
     modalDialog.addClass("modaltwo__dialog--visible");
-    }
+  }
 
   function closeModaltwo(event) {
     event.preventDefault("");
@@ -78,8 +75,30 @@ $(document).ready(function () {
     var modalDialog = $(".modaltwo__dialog");
     modalOverlay.removeClass("modaltwo__overlay--visible");
     modalDialog.removeClass("modaltwo__dialog--visible");
-    }
+  }
 
+  //Обработка форм
+  $(".form").each(function(){
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name.",
+          minlength: "Name should have more than two letters.",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Please specify your phone",
+        },
+      },
+    });
+    
+  })
+
+  
   $(document).keyup(function (e) {
     if (e.key === "Escape" || e.keyCode === 27) {
       const modalOverlay = $(".modal__overlay");
@@ -98,6 +117,9 @@ $(document).ready(function () {
     }
   });
 
-  
-
+  $(document).ready(function () {
+    $(".phone").mask("+7 (999)999-99-99");
+  });
 });
+
+

@@ -34,23 +34,31 @@
       line-height: 45px
       text-transform: uppercase
 .subscribe
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
   position: relative
   width: 355px
-  height: 55px
+  height: 95px
   border-radius: 4px
   overflow: hidden
   margin-left: 140px
+  padding-top: 30px
   &__input
+    display: flex
     position: absolute
-    width: 100%
-    height: 100%
+    max-width: 330px
+    height: 55px
     border: none
-    padding-right: 75px
+    padding-right: 89px
     padding-left: 33px
     font-style: normal
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    margin-bottom: 40px
+    margin-top: 15px
+    margin-right: 0
   &__button
     position: absolute
     min-width: 65px
@@ -61,4 +69,7 @@
     background-color: $primary
     color: $light
     cursor: pointer 
-    font-size: 11px     
+    font-size: 11px
+    height: 55px
+    margin-left: 0 
+     

@@ -1,6 +1,6 @@
 <?php include("./php-variable/header.php")?>
 
- <div class="swiper hotel-slider hotel__slider " style= " height:880px; width:auto; margin:5px 40px 5px 40px; z-index:100">
+ <div class="swiper hotel-slider hotel__slider " style= " height:880px; width:auto; margin:5px 40px 5px 40px">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
