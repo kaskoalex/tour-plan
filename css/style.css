@@ -64,8 +64,6 @@ img {
 
 .invalid {
   color: #EC1F46;
-  border-bottom: 1px solid #EC1F46;
-  z-index: 99;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -740,7 +738,7 @@ template {
   border-radius: 8px;
   width: 350px;
   min-height: 210px;
-  padding: 30px 28px 28px 27px;
+  padding: 30px 28px 17px 27px;
 }
 
 .booking__info {
@@ -854,6 +852,7 @@ template {
 .booking__button {
   width: 100%;
   min-height: 45px;
+  padding: 10px;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -874,7 +873,7 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 80px 0 67px 0;
+  padding: 99px 0 71px 0;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -901,19 +900,19 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   max-width: 731px;
   margin: auto;
 }
 
 .newsletter-title {
   color: #ffff;
-  font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 24px;
   line-height: 30px;
+  margin-top: 0px;
 }
 
 .newsletter-title__strong {
@@ -921,6 +920,7 @@ template {
   font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .subscribe {
@@ -964,7 +964,7 @@ template {
 
 .subscribe__button {
   position: absolute;
-  min-width: 65px;
+  min-width: 67px;
   right: 0;
   top: 0;
   height: 100%;
