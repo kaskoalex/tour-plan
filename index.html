@@ -734,6 +734,7 @@
                   name="name"
                   required
                   minlength="2"
+                  maxlength="20"
                 />
               </div>
               <div class="footer__input-group">
@@ -743,6 +744,7 @@
                   placeholder="Phone Number*"
                   name="phone"
                   required
+                  minlength="17"
                 />
               </div>
               <textarea
@@ -751,6 +753,7 @@
                 class="message footer__message"
                 placeholder="Message"
                 name="message"
+                maxlength="200"
               ></textarea>
               <button type="submit" class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -796,6 +799,7 @@
             name="name"
             required
             minlength="2"
+            maxlength="20"
           />
           <input
             type="tel"
@@ -803,6 +807,7 @@
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="17"
           />
           <input
             type="email"
@@ -815,6 +820,7 @@
             class="message modal__message"
             placeholder="Message"
             name="message"
+            maxlength="100"
           ></textarea>
           <button type="submit" class="button modal__button">Send</button>
           <span class="modal__info">* Required Fields</span>
@@ -840,6 +846,8 @@
             placeholder="Your Full Name*"
             name="name"
             required
+            minlength="2"
+            maxlength="20"
           />
           <input
             type="tel"
@@ -847,6 +855,7 @@
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="17"
           />
           <input
             type="email"
@@ -859,11 +868,12 @@
             class="mytextarea modaltwo__mytextarea"
             placeholder="👎"
             name="message"
+            maxlength="100"
           >
-⭐⭐⭐⭐⭐
-          </textarea>
+          </textarea>          
           <button type="submit" class="button modaltwo__button">Send</button>
-          <span class="modaltwo__info"> Thank You</span>
+          <p style="font-size: 20px;" >letters left: <span class="charsleft">100</span></p>
+          
         </form>
       </div>
       <!-- /.modal__dialog -->

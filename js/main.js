@@ -118,9 +118,25 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $(".phone").mask("+7 (999)999-99-99");
+    $(".phone").mask("+7 (999)999-99-99",);
   });
   AOS.init();
+
+  $(document).ready(function () {
+    $("textarea[maxlength]").keyup(function () {
+      var max = parseInt($(this).attr("maxlength"));
+
+      if ($(this).val().length > max) {
+        $(this).val($(this).val().substr(0, max));
+      }
+
+      $(this)
+        .parent()
+        .find(".charsleft")
+        .html(max - $(this).val().length);
+    });
+  });
+
 });
 
 
