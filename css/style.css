@@ -1985,7 +1985,6 @@ template {
     font-size: 30px;
   }
   .subscribe {
-    width: 100%;
     margin-left: 0;
   }
   .reviews-slider__item {
@@ -2004,6 +2003,9 @@ template {
   .reviews-slider__button--next {
     margin-right: 146px;
     top: 47px;
+  }
+  .form {
+    width: 350px;
   }
   .activities {
     padding-top: 40px;
