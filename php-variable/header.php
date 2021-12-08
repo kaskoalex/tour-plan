@@ -92,10 +92,10 @@
               </form>
             </li>
             <li class="navbar-menu__item">
-              <a href="all-deals.php" class="navbar-menu__link" href#="">All Deals</a>
+              <a href="all-deals.php" class="navbar-menu__link" >All Deals</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="hotels.php" class="navbar-menu__link" href#=""> Hotels</a>
+              <a href= "hotels.php" class="navbar-menu__link" > Hotels</a>
             </li>
             <li class="navbar-menu__item">
               <a href="./php/activities.php" class="navbar-menu__link" href#="">Activities</a>

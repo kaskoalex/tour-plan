@@ -1692,6 +1692,9 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel {
+    padding-bottom: 58px;
+  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1718,12 +1721,17 @@ template {
     width: 340px;
   }
   .newsletter {
-    padding: 72px 0 68px 0;
+    padding: 85px 0 68px 0;
     margin-left: auto;
     margin-right: auto;
   }
+  .newsletter-title {
+    margin-left: 0;
+    padding-top: 12px;
+  }
   .subscribe {
-    margin-left: 111px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .reviews {
     padding: 10px 0 58px 0;
@@ -1748,6 +1756,9 @@ template {
     padding-top: 10px;
     margin-bottom: 51px;
   }
+  .activities {
+    padding: 40px 0 47px 0;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1763,7 +1774,7 @@ template {
     height: 251px;
   }
   .card__title {
-    margin-right: 56px;
+    margin-right: 93px;
   }
   .footer {
     padding-top: 75px;
