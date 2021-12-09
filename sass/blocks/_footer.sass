@@ -31,13 +31,15 @@
       align-items: center
       min-width: 83px
       justify-content: space-between
+      &:hover
+        background: blue  
     &-network
       display: flex
       align-content: center
       align-items: start
       grid-row: 2 / 4
       grid-column: span 2
-      margin-left: 9px
+      margin-left: 9px      
   &__contact
     &-details
       grid-column: span 2   
@@ -84,6 +86,9 @@
   &__link
     text-decoration: none  
     color: inherit
+    &:hover
+      background: blue
+      color: #FFF0F5      
   &__input
     &-group
       margin-bottom: 
@@ -129,7 +134,7 @@
   &__formpay
     width: 136px
     height: 22px
-    margin-left: 264px
+    margin-left: 264px    
   &-input
     display: flex
     flex-wrap: wrap

@@ -952,7 +952,7 @@ template {
   max-width: 330px;
   height: 55px;
   border: none;
-  padding-right: 89px;
+  padding-right: 91px;
   padding-left: 33px;
   font-style: normal;
   font-weight: 300;
@@ -976,6 +976,12 @@ template {
   font-size: 11px;
   height: 55px;
   margin-left: 0;
+}
+
+#email-error {
+  margin-left: 33px;
+  height: 35px;
+  position: absolute;
 }
 
 .reviews {
@@ -1278,6 +1284,10 @@ template {
           justify-content: space-between;
 }
 
+.footer__social-links:hover {
+  background: blue;
+}
+
 .footer__social-network {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1369,6 +1379,11 @@ template {
 .footer__link {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__link:hover {
+  background: blue;
+  color: #FFF0F5;
 }
 
 .footer__input-group {
@@ -1687,6 +1702,9 @@ template {
 }
 
 @media (max-width: 992px) {
+  a:hover, button:hover {
+    cursor: default;
+  }
   .container, .newsletter-wrapper {
     max-width: 700px;
   }
@@ -1826,6 +1844,9 @@ template {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .footer__social-links:hover {
+    background: #0A223D;
+  }
   .footer__information {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -1871,6 +1892,10 @@ template {
   }
   .footer__message {
     max-width: 600px;
+  }
+  .footer__link:hover {
+    background: #0A223D;
+    color: #ffff;
   }
 }
 
