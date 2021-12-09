@@ -2411,6 +2411,12 @@ template {
   .search__input {
     width: 290px;
   }
+  .modal__dialog {
+    overflow-y: auto;
+    height: 80vh;
+    overflow-y: auto;
+    width: 80vh;
+  }
 }
 
 @media (max-width: 420px) {
