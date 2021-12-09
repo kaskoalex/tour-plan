@@ -87,7 +87,7 @@ $(document).ready(function () {
           minlength: "There should be more letters.",
         },
         email: {
-          required: "We need your email address to contact you",
+          required: "We need your email address to contact",
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {

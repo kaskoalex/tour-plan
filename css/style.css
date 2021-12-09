@@ -979,9 +979,7 @@ template {
 }
 
 #email-error {
-  margin-left: 33px;
   height: 35px;
-  position: absolute;
 }
 
 .reviews {
@@ -1285,7 +1283,7 @@ template {
 }
 
 .footer__social-links:hover {
-  background: blue;
+  background: #4b0082;
 }
 
 .footer__social-network {
@@ -1382,8 +1380,8 @@ template {
 }
 
 .footer__link:hover {
-  background: blue;
-  color: #FFF0F5;
+  background: #3b2977;
+  color: #1ba043;
 }
 
 .footer__input-group {
@@ -1976,6 +1974,8 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow-x: auto;
+    overflow-y: auto;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -2218,6 +2218,9 @@ template {
   }
   .booking {
     padding: 30px 18px 28px 25px;
+  }
+  .subscribe {
+    width: 260px;
   }
   .newsletter {
     padding: 63px 10px 82px 10px;
