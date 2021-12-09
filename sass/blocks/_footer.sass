@@ -44,6 +44,7 @@
     &-form  
       grid-column: span 2
       margin-left: 10px
+      margin-right: -2px
   &__form
     display: flex
     align-items: center
@@ -55,7 +56,7 @@
     font-weight: bold
     font-size: 18px
     line-height: 23px  
-    margin: 0 0 15px 0
+    margin: 0 0 11px 0
     text-transform: uppercase
     &--inline
       margin: 0 43px 0 0
@@ -78,21 +79,24 @@
   &__text
     color: $footer-text-color
     margin-bottom: 22px
+    font-size: 14px
+    font-weight: 300
   &__link
     text-decoration: none  
     color: inherit
   &__input
     &-group
-    margin-bottom: 
-    flex-basis: 48%
-    display: flex
-    flex-direction: column
-    justify-content: start    
+      margin-bottom: 
+      flex-basis: 48%
+      display: flex
+      flex-direction: column
+      justify-content: start    
   &__message
     max-width: 550px
     height: 123px    
     flex-basis: 100%
-    margin-top: 15px     
+    margin-top:  
+    margin-bottom: 0    
   &__button
     margin-top: 23px
   &__info
@@ -100,6 +104,7 @@
     font-weight: bold
     font-size: 12px
     line-height: 15px
+    margin-top: 20px
     color: $footer-info-color
     overflow: hidden  
   &__conditions
@@ -125,3 +130,12 @@
     width: 136px
     height: 22px
     margin-left: 264px
+  &-input
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between 
+    height: 65px 
+    padding-right: 0
+    width: 100%
+
+  

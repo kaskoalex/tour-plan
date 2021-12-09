@@ -84,7 +84,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please specify your name.",
-          minlength: "Name should have more than two letters.",
+          minlength: "There should be more letters.",
         },
         email: {
           required: "We need your email address to contact you",
