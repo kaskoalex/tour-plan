@@ -8,18 +8,28 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="icons/96.png" sizes="96x96" />
+    <link rel="shortcut icon" href="icons/android-icon.png" sizes="196x196" />
+    <link rel="apple-touch-icon" href="icons/apple-icon-180x180.png" />
+    <meta name="msapplication-square310x310logo" content="/icons/310.png" />
   </head>
 
   <body>
     <header class="navbar navbar--mobile-fixed">
       <div class="container navbar__container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a
+            href="https://www.papagai.de/tour-plan/"
+            class="logo"
+            data-aos="fade-right"
+            data-aos-delay="2000"
+          >
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -27,7 +37,12 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+            data-aos="flip-right"
+            data-aos-delay="1500"
+          >
             <input
               type="text"
               class="search__input"
@@ -38,7 +53,12 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="hotels.php"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-left"
+            data-aos-delay="2000"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -61,49 +81,77 @@
         <div class="container">
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-              <a href="#" class="user navbar__user navbar__user--mobile--visible">
-            <img
-              src="img/user-avatar.jpg"
-              alt="Avatar: Nathan"
-              class="user__avatar"
-            />
-            <span class="user__name user__name-light">Nathan</span>
-          </a>
+              <a
+                href="#"
+                class="user navbar__user navbar__user--mobile--visible"
+              >
+                <img
+                  src="img/user-avatar.jpg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name-light">Nathan</span>
+              </a>
             </li>
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-              <form action="#" class="search navbar__search navbar__search--mobile--visible">
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Search Location"
-            />
-            <button class="search__button">
-              <img src="img/search.svg" alt="Icon: search" />
-            </button>
-          </form>
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile--visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link" href#="">All Deals</a>
+              <a
+                href="https://hiltonhonors3.hilton.com/en/offers/index.htm"
+                class="navbar-menu__link"
+                >All Deals</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link" href#=""> Hotels</a>
+              <a href="hotels.php" class="navbar-menu__link"> Hotels</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link" href#="">Activities</a>
+              <a
+                href="https://newsroom.hilton.com/hhr"
+                class="navbar-menu__link"
+                >Activities</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link" href#=""
+              <a
+                href="https://www.hilton.com/en/corporate/development/"
+                class="navbar-menu__link"
                 >Hotel Day Packages</a
               >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link" href#="">Restaurants</a>
+              <a
+                href="https://travel.hilton.com/en_us/articles/"
+                class="navbar-menu__link"
+                >Restaurants</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link" href#="">Events</a>
+              <a
+                href="https://travel.hilton.com/en_us/guides/french-polynesia/"
+                class="navbar-menu__link"
+                >Events</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link" href#="">Rodrigues</a>
+              <a
+                href="https://travel.hilton.com/en_us/guides/mexico-resorts/"
+                class="navbar-menu__link"
+                >Rodrigues</a
+              >
             </li>
           </ul>
           <!-- /.navbar-menu -->
@@ -137,27 +185,33 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-            
               <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
-              
             </div>
             <p class="hotel-description hotel-info__description">
-              Наш менеджер позвонит вам скоро.
+              Наш менеджер позвонит вам скоро
             </p>
           </div>
-          <!-- /.hotel-info__text -->          
+          <!-- /.hotel-info__text -->
         </div>
-        <!-- /.hotel-->        
+        <!-- /.hotel-->
       </div>
       <!-- /.container -->
     </section>
     <!-- footer -->
     <!-- footer -->
 
+    <!-- footer -->
+    <!-- footer -->
+
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="footer__logod">
+          <a
+            href="https://www.papagai.de/tour-plan/"
+            class="footer__logod"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+          >
             <img
               src="img/vertikal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -169,28 +223,28 @@
             <h3 class="footer__title">ALL&nbsp;CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">All Deals</a>
+                <a href="hotels.php" class="footer__link">All Deals</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Hotels</a>
+                <a href="hotels.php" class="footer__link">Hotels</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Activities</a>
+                <a href="hotels.php" class="footer__link">Activities</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Spa Packages</a>
+                <a href="hotels.php" class="footer__link">Spa Packages</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Hotel Day Packages</a>
+                <a href="hotels.php" class="footer__link">Hotel Day Packages</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Restaurants</a>
+                <a href="hotels.php" class="footer__link">Restaurants</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Fitness</a>
+                <a href="hotels.php" class="footer__link">Fitness</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Rodrigues</a>
+                <a href="hotels.php" class="footer__link">Rodrigues</a>
               </li>
             </ul>
           </div>
@@ -201,22 +255,26 @@
             <h3 class="footer__title">ADDITIONAL&nbsp;INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">About Us</a>
+                <a href="hotels.php" class="footer__link">About Us</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Contact Us</a>
+                <a href="hotels.php" class="footer__link">Contact Us</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">How does it work? </a>
+                <a href="hotels.php" class="footer__link">How does it work? </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Frequently Asked Questions</a>
+                <a href="hotels.php" class="footer__link"
+                  >Frequently Asked Questions</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Deals.mu loyalty program</a>
+                <a href="hotels.php" class="footer__link"
+                  >Deals.mu loyalty program</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link"
+                <a href="hotels.php" class="footer__link"
                   >Promote your Business on BTP</a
                 >
               </li>
@@ -226,16 +284,24 @@
 
           <!-- footer__list Social Network-->
           <div class="footer__social-network">
-            <h3 class="footer__title footer__title--inline">
+            <h3
+              class="footer__title footer__title--inline"
+              data-aos="zoom-in"
+              data-aos-duration="4800"
+            >
               Social&nbsp;Network
             </h3>
             <!-- /.footer__title -->
-            <div class="footer__social-links">
-              <a href="#" class="footer__link"
+            <div
+              class="footer__social-links"
+              data-aos="zoom-in"
+              data-aos-duration="5800"
+            >
+              <a href="https://www.facebook.com/" class="footer__link"
                 ><img src="img/facebook.svg" alt="Icon: facebooke" /></a
-              ><a href="#" class="footer__link"
+              ><a href="https://www.youtube.com" class="footer__link"
                 ><img src="img/youtube.svg" alt="Icon: youtube" /></a
-              ><a href="#" class="footer__link"
+              ><a href="https://www.instagram.com/" class="footer__link"
                 ><img src="img/instagram.svg" alt="Icon: instagram"
               /></a>
             </div>
@@ -248,16 +314,18 @@
             <h3 class="footer__title">LEGAL&nbsp;INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">Terms & Conditions</a>
+                <a href="hotels.php" class="footer__link">Terms & Conditions</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Disclaimer</a>
+                <a href="hotels.php" class="footer__link">Disclaimer</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Cancellation policy</a>
+                <a href="hotels.php" class="footer__link"
+                  >Cancellation policy</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Privacy</a>
+                <a href="hotels.php" class="footer__link">Privacy</a>
               </li>
             </ul>
           </div>
@@ -289,21 +357,27 @@
                 </div>
                 <ul class="footer__ul footer__ul--tel">
                   <li class="footer__item">
-                    <a href="tel=2691500" class="footer__link"
-                      >Tel (business hours): 269&nbsp;1500</a
-                    >
+                    <span class="”phone-small”">
+                      <a href="tel:+2691500" class="footer__link"
+                        >Tel (business hours): 269&nbsp;1500</a
+                      >
+                    </span>
                   </li>
                   <li class="footer__item">
-                    <a href="tel=52-56-61-38" class="footer__link"
-                      >Tel (hotline) Monday - Saturday:
-                      52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00 pm)</a
-                    >
+                    <span class="”phone-small”">
+                      <a href="tel:+52-56-61-38" class="footer__link"
+                        >Tel (hotline) Monday - Saturday:
+                        52&#8209;56&#8209;61&#8209;38 (08:00 am – 20:00pm)</a
+                      >
+                    </span>
                   </li>
                   <li class="footer__item">
-                    <a href="tel=52-56-61-38 " class="footer__link"
-                      >Tel (hotline) Sunday: 52&#8209;56&#8209;61&#8209;38
-                      (08:00 am – 14:00 pm)</a
-                    >
+                    <span class="”phone-small”">
+                      <a href="tel:+52-56-61-38 " class="footer__link"
+                        >Tel (hotline) Sunday: 52&#8209;56&#8209;61&#8209;38
+                        (08:00 am – 14:00 pm)</a
+                      >
+                    </span>
                   </li>
                 </ul>
               </li>
@@ -316,7 +390,9 @@
                     class="footer__icon"
                   />
                 </div>
-                <a href="mail=cherly.lawson@example.com" class="footer__link"
+                <a
+                  href="mailto:cherly.lawson@example.com?subject=it%20is%20Mail%20von%20you%20tour-plan"
+                  class="footer__link"
                   >cherly.lawson@example.com</a
                 >
               </li>
@@ -325,25 +401,37 @@
           <!-- /.foote__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer-input">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                    minlength="2"
+                    maxlength="20"
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                    minlength="17"
+                  />
+                </div>
+              </div>
               <textarea
                 cols="30"
                 rows="10"
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
+                maxlength="200"
               ></textarea>
               <button type="submit" class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -353,28 +441,130 @@
         </div>
         <!-- /.footer__wrapper -->
         <div class="footer__conditions">
-            <div class="footer__conditions-wrapper">
-              <div class="footer__conditions-links">
-                <a href="#" class="footer__link">Disclaimer</a>
-                <a href="#" class="footer__link">Conditions of use</a>
-                <a href="#" class="footer__link">Cancellation policy</a>
-              </div>
-              <!-- /.footer__conditions-links -->
+          <div class="footer__conditions-wrapper">
+            <div class="footer__conditions-links">
+              <a href="hotels.php" class="footer__link">Disclaimer</a>
+              <a href="hotels.php" class="footer__link">Conditions of use</a>
+              <a href="hotels.php" class="footer__link">Cancellation policy</a>
+            </div>
+            <!-- /.footer__conditions-links -->
+            <a class="footer__linkpay" href="https://www.paypal.com">
               <div class="footer__formpay">
                 <img src="img/pay.png" alt="icon: pay" />
               </div>
-            </div>
-            <!-- /.footer__conditions-wrapper -->
+            </a>
           </div>
-          <!-- /.footer__conditions -->
-          <!-- /.footer__info-pay -->
+          <!-- /.footer__conditions-wrapper -->
         </div>
+        <!-- /.footer__conditions -->
+        <!-- /.footer__info-pay -->
       </div>
       <!-- /.container -->
     </footer>
-    .modal>.modal__overlay+.modal__dialog
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title">Booking</h3>
+        <form action="send.php" method="post" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+            maxlength="20"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+            minlength="17"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+            maxlength="100"
+          ></textarea>
+          <button type="submit" class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modaltwo">
+      <div class="modaltwo__overlay"></div>
+      <!-- /.modal__overlay -->
+
+      <div class="modaltwo__dialog">
+        <a href="#" class="modaltwo__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modaltwo__title">Give us your feedback</h3>
+        <form action="send.php" method="post" class="modaltwo__form form">
+          <input
+            type="text"
+            class="input modaltwo__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+            maxlength="20"
+          />
+          <input
+            type="tel"
+            class="input modaltwo__input phone"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+            minlength="17"
+          />
+          <input
+            type="email"
+            class="input modaltwo__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="mytextarea modaltwo__mytextarea"
+            placeholder="Your message"
+            name="message"
+            maxlength="100"
+          ></textarea>
+          <button type="submit" class="button modaltwo__button">Send</button>
+          <p style="font-size: 20px">
+            letters left: <span class="charsleft">100</span>
+          </p>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal- -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/jquery.validate.min.js" defer></script>
+    <script src="js/jquery.mask.min.js" defer></script>
+    <script src="js/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>

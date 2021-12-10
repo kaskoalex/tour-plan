@@ -1,7 +1,13 @@
     <!-- reviews -->
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about us</h2>
+        <h2
+          class="reviews__title"
+          data-aos="zoom-in up"
+          data-aos-duration="2500"
+        >
+          What people think about us
+        </h2>
 
         <!-- slider -->
         <div class="swiper reviews-slider">

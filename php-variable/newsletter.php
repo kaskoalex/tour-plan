@@ -1,4 +1,4 @@
-  <!-- /.newsletter -->
+    <!-- /.newsletter -->
     <section class="newsletter">
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
@@ -9,14 +9,15 @@
         <!-- /.subscribe -->
         <form
           action="send.php"
-          method="POST"
-          class="subscribe newsletter__subscribe"
+          method="post"
+          class="subscribe newsletter__subscribe form"
         >
           <input
-            type="text"
-            class="subscribe__input"
+            type="email"
+            class="input subscribe__input"
             placeholder="Your email address"
-            name="youremailaddress"
+            name="email"
+            required
           />
           <button type="submit" class="subscribe__button">Send</button>
         </form>

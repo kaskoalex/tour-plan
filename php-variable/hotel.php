@@ -1,4 +1,4 @@
-    <!-- /.hotel -->
+ <!-- /.hotel -->
     <section class="hotel">
       <div class="container hotel__container">
         <div class="hotel-info">
@@ -21,7 +21,13 @@
           </div>
           <!-- /.hotel-info__text -->
 
-          <div data-toggletwo="modaltwo" class="rating hotel-info__rating">
+          <div
+            data-toggletwo="modaltwo"
+            class="rating hotel-info__rating"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
           </div>
@@ -39,7 +45,7 @@
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slide-1.jpg"
+                  src="img/slide-1.webp"
                   alt="slide-1"
                 />
               </div>
@@ -53,21 +59,21 @@
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slide-3.jpg"
+                  src="img/slide-3.webp"
                   alt="slide-3"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slide-4.jpg"
+                  src="img/slide-4.webp"
                   alt="slide-4"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slide-5.jpg"
+                  src="img/slide-5.webp"
                   alt="slide-5"
                 />
               </div>
@@ -130,9 +136,7 @@
             <div class="map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.1489232284355!2d-81.09642582405878!3d32.08182463043553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fb9e673178c8cf%3A0x5a3b052ba093a084!2sDoubleTree%20by%20Hilton%20Hotel%20Savannah%20Historic%20District!5e0!3m2!1sru!2skz!4v1637685486562!5m2!1sru!2skz"
-                width="100%"
-                height="100%"
-                style="border: 0"
+                style="border: 0; width: 100%; height: 100%"
                 allowfullscreen=""
                 loading="lazy"
               >

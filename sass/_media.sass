@@ -405,21 +405,23 @@
   .booking
     padding: 30px 18px 28px 25px 
   .subscribe
-    width: 260px       
+    width: 300px       
   .newsletter    
-    padding: 63px 10px 82px 10px
+    padding: 63px 10px 43px 10px
+    &-wrapper
+      width: 100%
     &-title
       font-size: 19px
-      margin-bottom: 48px        
+      margin-bottom: 45px        
       &__strong
         font-size: 30px
         line-height: 22px
-        margin-top: 10px
+        margin-top: 14px
       &-wrapper
         max-width: 277px
         padding: 63px 10px 82px 10px          
   .reviews
-    padding: 10px 0 36px 0
+    padding: 13px 0 36px 0
     &__title
       font-size: 18px
       max-width: 200px
@@ -427,6 +429,7 @@
       margin-right: auto
       line-height: 25px
       margin-bottom: 39px
+
     &-slider
       &__item
         padding: 0 30px 30px
@@ -435,26 +438,30 @@
       &__button
         top: 32px
         &--prev
-          margin-left: 56px
+          margin-left: 34px
           top: 46px
         &--next
-          margin-right: 56px 
+          margin-right: 42px 
           top: 47px  
   .card
     width: 100% 
-    margin-bottom: 22px    
-  .activities__title
-    font-size: 18px
-    margin-bottom: 33px
-  .activities__card-aktiv
-    order: -1 
-  .activities__card-on
-    order: -2
+    margin-bottom: 22px 
+    &__title
+      margin-right: 41px
+  .activities
+    padding-bottom: 38px       
+    &__title
+      font-size: 18px
+      margin-bottom: 33px
+    &__card-aktiv
+      order: -1 
+    &__card-on
+      order: -2
   .footer
-    padding-top: 70px
+    padding-top: 94px
     &-wrapper
       grid-template-rows: 80px 80px 140px 160px 200px 330px 470px 80px
-      grid-column-gap: 0
+      grid-column-gap: 
     &__input
       flex-basis: 49%
     &__logod
@@ -463,7 +470,8 @@
     &__social
       &-network
         grid-row: 2
-        flex-direction: column        
+        flex-direction: column
+        margin-left: 0        
     &__information
       grid-row: 4      
     &__categories
@@ -531,36 +539,49 @@
     &__dialog
       overflow-y: auto
       height: 80vh
-      overflow-y: auto
-      width: 80vh               
+                    
 
 @media (max-width: 420px)
   .container
-    max-width: 100%     
+    max-width: 100% 
+  .subscribe 
+    width: 280px     
   .newsletter
     &-title
       font-size: 
       margin-bottom:         
       &__strong
-        font-size: 20px
+        font-size: 
         line-height: 20px
         margin-top:
   .footer
-    padding-top: 70px
     &-wrapper
-      grid-template-rows: 80px 80px 140px 160px 200px 400px 360px 80px
-    
+      grid-template-rows: 99px 45px 118px 163px 196px 371px 360px 80px
+      grid-column-gap: 1
+      grid-gap: none   
     &__input
       flex-basis: 49%
     &__logod
-      width: 95pхx
+      width: 95px
+      margin-top: -25px
     &__social
       &-network
         grid-row: 2
-        flex-direction: column        
+        flex-direction: column
+        margin-left: 0
+    &__title
+      &--inline
+        margin-bottom: 20px 
+    &__text
+      margin-bottom: 33px
+    &__item
+      &--mr-2
+        margin-bottom: -16px          
+               
     &__icon
       &-wrapper
         min-width: 30px
+        margin-top: 10px
      
     &__button
       order: 1 
@@ -622,12 +643,7 @@
     &-slider
       &__button
         top: 32px
-        &--prev
-          margin-left: 42px
-          top: 46px
-        &--next
-          margin-right: 42px 
-          top: 47px
+       
   .search
       width: 243px 
       margin-bottom: 18px 

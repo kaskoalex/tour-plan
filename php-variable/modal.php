@@ -7,7 +7,7 @@
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title">Booking</h3>
-        <form action="send.php" method="post" class="form modal__form">
+        <form action="send.php" method="post" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
@@ -15,23 +15,28 @@
             name="name"
             required
             minlength="2"
+            maxlength="20"
           />
           <input
-            type="text"
-            class="input modal__input"
+            type="tel"
+            class="input modal__input phone"
             placeholder="Phone Number*"
             name="phone"
+            required
+            minlength="17"
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
+            required
           />
           <textarea
             class="message modal__message"
             placeholder="Message"
             name="message"
+            maxlength="100"
           ></textarea>
           <button type="submit" class="button modal__button">Send</button>
           <span class="modal__info">* Required Fields</span>
@@ -50,34 +55,41 @@
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modaltwo__title">Give us your feedback</h3>
-        <form action="send.php" method="post" class="form modaltwo__form">
+        <form action="send.php" method="post" class="modaltwo__form form">
           <input
             type="text"
             class="input modaltwo__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
+            maxlength="20"
           />
           <input
-            type="text"
-            class="input modaltwo__input"
+            type="tel"
+            class="input modaltwo__input phone"
             placeholder="Phone Number*"
             name="phone"
+            required
+            minlength="17"
           />
           <input
-            type="text"
+            type="email"
             class="input modaltwo__input"
             placeholder="Email*"
             name="email"
+            required
           />
           <textarea
             class="mytextarea modaltwo__mytextarea"
-            placeholder="👎"
+            placeholder="Your message"
             name="message"
-          >
-⭐⭐⭐⭐⭐</textarea
-          >
+            maxlength="100"
+          ></textarea>
           <button type="submit" class="button modaltwo__button">Send</button>
-          <span class="modaltwo__info"> Thank You</span>
+          <p style="font-size: 20px">
+            letters left: <span class="charsleft">100</span>
+          </p>
         </form>
       </div>
       <!-- /.modal__dialog -->
