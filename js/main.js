@@ -90,6 +90,10 @@ $(document).ready(function () {
           required: "We need your email address to contact",
           email: "Your email address must be in the format of name@domain.com",
         },
+        email2: {
+          required: "We need your email address to contact",
+          email: "Your email address must be in the format of name@domain.com",
+        },
         phone: {
           required: "Please specify your phone",
         },

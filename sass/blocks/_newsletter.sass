@@ -1,6 +1,6 @@
 .newsletter
   position: relative
-  padding: 99px 0 66px 0
+  padding: 98px 0 87px 0
   background-image: url(../img/newsletter-bg.jpg)
   background-repeat: no-repeat
   background-position: center
@@ -22,68 +22,63 @@
     justify-content: space-between
     max-width: 731px
     margin: auto
-    
   &-title
-    color: $light    
-    font-weight: 200
+    color: $light
+    font-style: normal
+    font-weight: 300
     font-size: 24px
     line-height: 30px
-    margin-top: 0px
-    margin-left: -49px
     &__strong
       display: block
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
-      font-weight: 400
 .subscribe
-  display: flex
-  flex-direction: column
-  justify-content: flex-end
   position: relative
-  width: 417px
-  height: 95px
+  width: 355px
+  height: 90px
   border-radius: 4px
   overflow: hidden
-  margin-right: 47px
-  padding-top: 30px
-  &__input
+  &__input 
     display: flex
+    flex-direction: column
+    justify-content: space-between  
     position: absolute
-    max-width: 330px
+    width: 100%
     height: 55px
     border: none
-    padding-right: 91px
+    padding-right: 75px
     padding-left: 33px
     font-style: normal
     font-weight: 300
     font-size: 14px
     line-height: 18px
-    margin-bottom: 29px
-    margin-top: 15px
-    margin-right: 0
+    &-group
+      width: 100%
+      height: 100%
+    &:focus
+      outline: none
+    &::placeholder
+      color: 
   &__button
     position: absolute
-    min-width: 67px
+    min-width: 65px
     right: 0
-    top: 0
-    height: 100%
-    border: none
-    background-color: $primary
-    color: $light
-    cursor: pointer 
-    font-size: 11px
+    margen-top: 10px
     height: 55px
-    margin-left: 0
+    border: none
     border-bottom-right-radius: 4px
     border-top-right-radius: 4px
-    z-index: 99
-    margin-top: 11px 
-
-#email-error
-  margin-left: 
-  margin-right: 
-  height: 28px
+    background-color: $primary
+    color: $light
+    cursor: pointer    
+#email2-error
+  height: 1px
+  margin-top: 60px
+  font-size: 17px  
+  
+ 
+ 
   
 
   
