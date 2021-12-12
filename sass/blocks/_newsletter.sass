@@ -1,6 +1,7 @@
 .newsletter
   position: relative
-  padding: 77px 0 66px 0
+  padding-top: 98px
+  padding-bottom: 87px
   background-image: url(../img/newsletter-bg.jpg)
   background-repeat: no-repeat
   background-position: center
@@ -9,76 +10,78 @@
     content: ""
     position: absolute
     top: 0
+    bottom: 0
     left: 0
     right: 0
-    bottom: 0
-    width: 100% 
-    height: 100%  
+    z-index: 5
     background-color: rgba($dark, 0.8)
   &-wrapper
     position: relative
+    z-index: 10
     display: flex
-    align-items: center
     justify-content: space-between
+    align-items: center
     max-width: 731px
-    margin-left: 138px
+    margin: auto
   &-title
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    max-width: 50%
+    margin: 0
     color: $light
-    font-style: normal
     font-weight: 300
     font-size: 24px
     line-height: 30px
+    word-break: break-word
     &__strong
-      display: block
+      text-transform: uppercase
+      font-weight: 600
       font-size: 36px
       line-height: 45px
-      text-transform: uppercase
+      word-break: break-word
+
 .subscribe
   position: relative
   width: 350px
-  height: 90px
-  border-radius: 4px
-  overflow: hidden
-  &__input 
-    display: flex
-    flex-direction: column
-    justify-content: space-between  
-    position: absolute
+  max-width: 50%
+  height: 55px
+  &__input
     width: 100%
-    height: 55px
-    border: none
-    padding-right: 75px
+    height: 100%
     padding-left: 33px
-    font-style: normal
+    padding-right: 75px
+    border: none
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    border-radius: 4px
     color: $text-color
-    font-size: 17px
     &-group
       width: 100%
       height: 100%
     &:focus
       outline: none
     &::placeholder
-      color: 
+      color: $text-color
   &__button
     position: absolute
-    min-width: 65px
+    top: 0
     right: 0
-    margen-top: 10px
-    height: 55px
-    border: none
-    border-bottom-right-radius: 4px
+    height: 100%
+    min-width: 65px
+    max-width: 100px
     border-top-right-radius: 4px
-    background-color: $primary
+    border-bottom-right-radius: 4px
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
     color: $light
+    background-color: $primary
     cursor: pointer
-    font-size: 12px    
-#email2-error
-  height: 5px
-  margin-top: 60px
-  font-size: 17px  
+    border: none
+    outline: none
+      
   
  
  
