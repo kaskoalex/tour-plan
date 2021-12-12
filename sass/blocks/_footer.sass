@@ -6,10 +6,10 @@
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(252px, 1fr))
-    grid-column-gap: 34px
+    grid-column-gap: 30px
     grid-auto-rows: minmax(60px, min-content)
     align-items: start
-    margin-left: 14px
+    margin-left: 0
   &__logo
     width: 155px
     align-self: center
@@ -36,8 +36,6 @@
     &-link
       line-height: 0
     &-icon
-      width: 20px
-      height: 20px
   &__legal-info
     padding-left: 60px
   &__contact
@@ -66,6 +64,7 @@
     &--mb-2
       margin-bottom: 23px
       margin-top: 10px
+      margin-left: -6px
   &__ul
     margin: 0
     padding: 0
@@ -82,6 +81,7 @@
       margin-bottom: 15px
     &--mb-2
       margin-bottom: 20px
+      
   &__link
     text-decoration: none
     color: inherit
@@ -100,6 +100,7 @@
     line-height: 22px
     color: $footer-text-color
     word-break: break-word
+    margin-left: -6px
   &__icon
     &-wrapper
       min-width: 40px
@@ -118,15 +119,22 @@
     flex-wrap: wrap
   &__input
     width: 100%
+    font-size: 12px 
     &-group
       flex-basis: 47%
-      margin-bottom: 
+      margin-bottom:
+      padding-bottom: 
+      display: flex
+      flex-direction: column
+      justify-content: start
+      height: 65px     
   &__textarea
     flex-basis: 100%
     height: 123px
     margin-bottom: 23px
     border-radius: 4px
-    margin-top: 15px
+    margin-top:
+    font-size: 12px   
   &__button
     min-width: 160px
     min-height: 50px
@@ -152,7 +160,7 @@
       line-height: 15px
       color: $light
       text-align: center
-      margin-left: 23px
+      margin-left: -8px
     &__link
       margin-right: 11px
       color: inherit
@@ -165,7 +173,7 @@
       margin-left: auto
       width: 136px
       height: 22px
-      margin-right: -16px
+      margin-right: 4px
   &__bottom
     margin-top: 95px
   .fac, .you, .inst
@@ -174,5 +182,18 @@
   #name-error, #phone-error
     height: 5px
     margin-bottom: -15px
+    margin-top: 0
     font-size: 16px 
-    word-break: break-word     
+    word-break: break-word
+  .fac    
+    width: 24px
+    height: 24px
+  .you
+    width: 22px
+    height: 22px
+  .inst        
+    width: 20px
+    height: 20px
+
+  
+             

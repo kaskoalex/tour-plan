@@ -24,6 +24,7 @@ img {
   border: none;
   padding: 0 23px;
   height: 50px;
+  outline: none;
 }
 
 .message {
@@ -872,7 +873,8 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 77px 0 66px 0;
+  padding-top: 98px;
+  padding-bottom: 87px;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -883,53 +885,30 @@ template {
   content: "";
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+  z-index: 5;
   background-color: rgba(10, 34, 61, 0.8);
 }
 
 .newsletter-wrapper {
   position: relative;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 731px;
-  margin-left: 138px;
+  margin: auto;
 }
 
 .newsletter-title {
-  color: #ffff;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.newsletter-title__strong {
-  display: block;
-  font-size: 36px;
-  line-height: 45px;
-  text-transform: uppercase;
-}
-
-.subscribe {
-  position: relative;
-  width: 350px;
-  height: 90px;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.subscribe__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -937,21 +916,43 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
-  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 50%;
+  margin: 0;
+  color: #ffff;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  word-break: break-word;
+}
+
+.newsletter-title__strong {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  word-break: break-word;
+}
+
+.subscribe {
+  position: relative;
+  width: 350px;
+  max-width: 50%;
   height: 55px;
-  border: none;
-  padding-right: 75px;
+}
+
+.subscribe__input {
+  width: 100%;
+  height: 100%;
   padding-left: 33px;
-  font-style: normal;
+  padding-right: 75px;
+  border: none;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 4px;
   color: #333333;
-  font-size: 17px;
 }
 
 .subscribe__input-group {
@@ -963,25 +964,39 @@ template {
   outline: none;
 }
 
-.subscribe__button {
-  position: absolute;
-  min-width: 65px;
-  right: 0;
-  margen-top: 10px;
-  height: 55px;
-  border: none;
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
-  background-color: #EC1F46;
-  color: #ffff;
-  cursor: pointer;
-  font-size: 12px;
+.subscribe__input::-webkit-input-placeholder {
+  color: #333333;
 }
 
-#email2-error {
-  height: 5px;
-  margin-top: 60px;
-  font-size: 17px;
+.subscribe__input:-ms-input-placeholder {
+  color: #333333;
+}
+
+.subscribe__input::-ms-input-placeholder {
+  color: #333333;
+}
+
+.subscribe__input::placeholder {
+  color: #333333;
+}
+
+.subscribe__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  min-width: 65px;
+  max-width: 100px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffff;
+  background-color: #EC1F46;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .reviews {
@@ -1164,9 +1179,9 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 25px 25px;
+  padding: 24px 26px;
   width: 255px;
-  height: 255px;
+  min-height: 255px;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -1203,6 +1218,7 @@ template {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  word-break: break-word;
 }
 
 .card__button {
@@ -1230,13 +1246,13 @@ template {
   display: grid;
   -ms-grid-columns: (minmax(252px, 1fr))[4];
       grid-template-columns: repeat(4, minmax(252px, 1fr));
-  grid-column-gap: 34px;
+  grid-column-gap: 30px;
   grid-auto-rows: minmax(60px, -webkit-min-content);
   grid-auto-rows: minmax(60px, min-content);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  margin-left: 14px;
+  margin-left: 0;
 }
 
 .footer__logo {
@@ -1287,11 +1303,6 @@ template {
   line-height: 0;
 }
 
-.footer__social-icon {
-  width: 20px;
-  height: 20px;
-}
-
 .footer__legal-info {
   padding-left: 60px;
 }
@@ -1333,6 +1344,7 @@ template {
 .footer__title--mb-2 {
   margin-bottom: 23px;
   margin-top: 10px;
+  margin-left: -6px;
 }
 
 .footer__ul {
@@ -1387,6 +1399,7 @@ template {
   line-height: 22px;
   color: #BDBDBD;
   word-break: break-word;
+  margin-left: -6px;
 }
 
 .footer__icon-wrapper {
@@ -1422,11 +1435,23 @@ template {
 
 .footer__input {
   width: 100%;
+  font-size: 12px;
 }
 
 .footer__input-group {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 65px;
 }
 
 .footer__textarea {
@@ -1435,7 +1460,7 @@ template {
   height: 123px;
   margin-bottom: 23px;
   border-radius: 4px;
-  margin-top: 15px;
+  font-size: 12px;
 }
 
 .footer__button {
@@ -1475,7 +1500,7 @@ template {
   line-height: 15px;
   color: #ffff;
   text-align: center;
-  margin-left: 23px;
+  margin-left: -8px;
 }
 
 .footer-bottom__link {
@@ -1494,7 +1519,7 @@ template {
   margin-left: auto;
   width: 136px;
   height: 22px;
-  margin-right: -16px;
+  margin-right: 4px;
 }
 
 .footer__bottom {
@@ -1508,8 +1533,24 @@ template {
 .footer #name-error, .footer #phone-error {
   height: 5px;
   margin-bottom: -15px;
+  margin-top: 0;
   font-size: 16px;
   word-break: break-word;
+}
+
+.footer .fac {
+  width: 24px;
+  height: 24px;
+}
+
+.footer .you {
+  width: 22px;
+  height: 22px;
+}
+
+.footer .inst {
+  width: 20px;
+  height: 20px;
 }
 
 .modal__overlay {
@@ -1719,7 +1760,7 @@ template {
   }
   .card {
     width: 230px;
-    height: 230px;
+    min-height: 230px;
   }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[4];
@@ -1739,36 +1780,35 @@ template {
     cursor: default;
   }
   .logo {
-    width: 135px;
+    width: 130px;
   }
   .rating {
-    margin-top: -19px;
+    margin-top: -16px;
   }
   .hotel {
-    padding-top: 23px;
+    padding-top: 15px;
   }
   .hotel-info {
     padding-bottom: 0;
   }
   .hotel-info__text {
-    margin-left: 80px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .container, .newsletter-wrapper {
     max-width: 700px;
   }
   .navbar-top {
     padding-top: 30px;
-    padding-bottom: 27px;
+    padding-bottom: 30px;
   }
   .navbar__search {
     margin-left: 51px;
   }
   .navbar-menu {
-    padding-top: 22px;
+    padding-top: 20px;
     padding-bottom: 22px;
-    padding-left: 11px;
-    padding-right: 10px;
+    padding-left: 16px;
+    padding-right: 13px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -1797,7 +1837,7 @@ template {
   }
   .booking {
     width: 340px;
-    padding: 30px 27px 28px 25px;
+    padding: 30px 21px 28px 25px;
   }
   .hotel-slider {
     width: 100%;
@@ -1806,26 +1846,8 @@ template {
     width: 340px;
   }
   .newsletter {
-    padding: 63px 0 75px 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .newsletter-wrapper {
-    margin-left: 25px;
-  }
-  .newsletter-title {
-    margin-left: 0;
-    padding-top: 8px;
-  }
-  .subscribe {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .subscribe__button {
-    margin-top: 12px;
-  }
-  .subscribe__input {
-    margin-bottom: -13px;
+    padding-top: 91px;
+    padding-bottom: 92px;
   }
   .reviews {
     padding: 1px 0 58px 0;
@@ -1851,24 +1873,31 @@ template {
     margin-bottom: 51px;
   }
   .activities {
-    padding: 40px 0 47px 0;
+    padding: 40px 0 44px 0;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .activities__card {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
+  }
+  .activities__card-on {
+    margin-bottom: 25px;
+  }
+  .activities__card-aktiv {
+    margin-bottom: 25px;
   }
   .activities__title {
     margin-bottom: 57px;
   }
   .card {
     width: 340px;
-    height: 251px;
+    min-height: 253px;
   }
   .card__title {
-    margin-right: 93px;
+    margin-right: 85px;
+    margin-bottom: 17px;
   }
   .footer {
     padding-top: 49px;
@@ -1877,8 +1906,8 @@ template {
   .footer-wrapper {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
-    grid-row-gap: 20px;
-    grid-column-gap: 30px;
+    grid-row-gap: 21px;
+    grid-column-gap: 20px;
     margin-left: 0;
   }
   .footer__logo {
@@ -1890,12 +1919,15 @@ template {
     margin-bottom: 25px;
     margin-top: 20px;
   }
+  .footer__ul {
+    margin-left: 2px;
+  }
   .footer__legal-info {
-    padding-left: 10px;
+    padding-left: 18px;
     grid-column: span 4;
   }
   .footer__social-network {
-    margin-top: 0;
+    margin-top: 3px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
@@ -1903,23 +1935,26 @@ template {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    margin-left: 4px;
+    margin-left: 8px;
   }
   .footer__categories {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     grid-column: span 3;
+    margin-left: 0;
+    padding-bottom: 3px;
   }
   .footer__additional-info {
     grid-column: span 5;
-    padding-left: 17px;
+    padding-left: 20px;
   }
   .footer__contact-details {
     -ms-grid-row: 3;
     grid-row: 3;
     grid-column: span 12;
-    margin-top: 35px;
+    margin-top: 31px;
+    margin-left: 3px;
   }
   .footer__contact-form {
     -ms-grid-row: 4;
@@ -1927,6 +1962,12 @@ template {
     grid-column: span 10;
     padding-right: 39px;
     margin-top: 36px;
+  }
+  .footer__title--mb-2 {
+    margin-left: -1px;
+  }
+  .footer__text {
+    margin-left: -2px;
   }
   .footer__input-group {
     -ms-flex-preferred-size: 47%;
@@ -2092,12 +2133,7 @@ template {
   .map {
     width: 100%;
   }
-  .newsletter {
-    width: 100%;
-  }
   .newsletter-wrapper {
-    max-width: 576px;
-    width: 92%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2105,19 +2141,14 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 87.5%;
   }
-  .newsletter-title {
-    font-size: 25px;
-    line-height: 25px;
-  }
-  .newsletter-title__strong {
-    font-size: 30px;
-  }
-  .subscribe__button {
-    margin-top: 13px;
+  .newsletter__title {
+    margin-bottom: 37px;
+    max-width: 100%;
   }
   .subscribe {
-    margin-left: 0;
+    max-width: 100%;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -2142,7 +2173,7 @@ template {
   }
   .card {
     width: 49%;
-    height: 255px;
+    min-height: 255px;
   }
   .footer {
     padding-top: 70px;
@@ -2292,7 +2323,7 @@ template {
     margin-right: 18px;
   }
   .hotel {
-    padding-bottom: 40px;
+    padding-bottom: 39px;
   }
   .hotel__slider {
     margin-bottom: 20px;
@@ -2324,27 +2355,18 @@ template {
   .booking {
     padding: 30px 24px 28px 25px;
   }
-  .subscribe {
-    width: 300px;
-  }
   .newsletter {
-    padding: 63px 10px 43px 10px;
-  }
-  .newsletter-wrapper {
-    width: 100%;
+    padding-top: 76px;
+    padding-bottom: 83px;
   }
   .newsletter-title {
-    font-size: 19px;
-    margin-bottom: 45px;
+    font-size: 20px;
+    line-height: 25px;
   }
   .newsletter-title__strong {
+    margin-top: 5px;
     font-size: 30px;
-    line-height: 22px;
-    margin-top: 14px;
-  }
-  .newsletter-title-wrapper {
-    max-width: 277px;
-    padding: 63px 10px 82px 10px;
+    line-height: 38px;
   }
   .reviews {
     padding: 13px 0 36px 0;
@@ -2530,14 +2552,14 @@ template {
     padding-top: 10px;
   }
   .hotel-info {
-    padding-bottom: 29px;
+    padding-bottom: 17px;
   }
   .hotel-info__text {
     margin-left: 0;
   }
   .hotel__slider {
     width: 99%;
-    margin-left: 3px;
+    margin-left: 0;
   }
   .subscribe {
     width: 280px;
@@ -2548,15 +2570,19 @@ template {
     padding-left: 20px;
   }
   .newsletter {
-    padding: 50px 5px 73px 5px;
+    padding: 64px 7px 82px 17px;
+  }
+  .newsletter-wrapper {
+    width: 100%;
   }
   .newsletter-title {
-    margin-bottom: 22px;
-    padding-top: 11px;
-    letter-spacing: 0.03em;
+    margin-bottom: 46px;
+    padding-top: 12px;
   }
   .newsletter-title__strong {
     line-height: 20px;
+    margin-top: 14px;
+    font-weight: 400;
   }
   .newsletter-wrapper {
     margin-left: -5px;
@@ -2571,22 +2597,31 @@ template {
     top: 32px;
   }
   .reviews-slider__button--prev {
-    margin-left: 30px;
+    margin-left: 32px;
     top: 45px;
   }
   .reviews-slider__button--next {
     margin-right: 38px;
     top: 46px;
   }
+  .reviews-slider__avatar {
+    margin-right: 7px;
+  }
   .activities {
-    padding-bottom: 38px;
+    padding-bottom: 33px;
+  }
+  .card__title {
+    margin-right: 27px;
   }
   .footer {
     padding-top: 77px;
   }
+  .footer__ul {
+    margin-left: 0;
+  }
   .footer-wrapper {
-    -ms-grid-rows: 99px 139px 141px 194px 245px 394px 271px 80px;
-        grid-template-rows: 99px 139px 141px 194px 245px 394px 271px 80px;
+    -ms-grid-rows: 100px 139px 140px 194px 245px 396px 271px 80px;
+        grid-template-rows: 100px 139px 140px 194px 245px 396px 271px 80px;
     grid-row-gap: 6px;
     grid-column-gap: 1px;
   }
@@ -2611,13 +2646,16 @@ template {
     margin-left: 0;
   }
   .footer__title {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
   .footer__title--inline {
     margin-bottom: 20px;
   }
   .footer__item--mr-2 {
     margin-bottom: 13px;
+  }
+  .footer__categories {
+    margin-left: 0;
   }
   .footer__icon-wrapper {
     min-width: 30px;
@@ -2652,7 +2690,6 @@ template {
   }
   .footer__form {
     margin-top: -5px;
-    margin-right: -5px;
   }
   .footer__item--mb-1 {
     margin-bottom: 23px;
@@ -2698,8 +2735,9 @@ template {
     font-weight: 300;
     font-size: 14px;
     line-height: 23px;
-    margin-bottom: 19px;
-    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-top: 22px;
   }
   .footer-bottom__link {
     margin-right: 6px;
@@ -2707,6 +2745,9 @@ template {
   .footer-bottom__text {
     margin-top: 4px;
     margin-bottom: 9px;
+  }
+  .footer-bottom__bottom {
+    margin-top: 52px;
   }
   .search {
     width: 275px;
