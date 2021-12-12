@@ -332,28 +332,32 @@
 
     <!-- /.newsletter -->
     <section class="newsletter">
-      <div class="container">
-        <div class="newsletter-wrapper">
+      <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
-          <span class="newsletter-title__strong">Newsletter </span>
+          <span class="newsletter-title__strong"> Newsletter </span>
         </h2>
-
-        <!-- /.subscribe -->
-        <form action="send.php" method="post" class="subscribe newsletter__subscribe form">
-            <input
-              type="email"
-              class="input subscribe__input"
-              placeholder="Your email address"
-              name="email2"
-              required
-            />
-            <button class="subscribe__button">Send
-            </button>
-          </form>
-
-        
-      </div>
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe form"
+        >
+          <input
+            type="email"
+            class="subscribe__input"
+            placeholder="Your email address"
+            name="email"
+            required
+          />
+          <button
+            class="subscribe__button"
+            type="submit"
+            name="form"
+            value="message-subscribe"
+          >
+            Send
+          </button>
+        </form>
       </div>
       <!-- /.newsletter-wrapper -->
     </section>
@@ -400,7 +404,7 @@
                   and amenities articles were in corner of gallery which were
                   giving bad feeling. Breakfast was good and support of the
                   staff was also very nice. Location is not good as per
-                  atmosphere, it is very nearby most of the popular places but
+                  atmosphere, it is very nearby most o the popular places but
                   self location in a narrow street is not good. Overall it was a
                   good experience and could recommend.
                 </p>
@@ -628,10 +632,14 @@
                 <a href="hotels.php" class="footer__link">How does it work?</a>
               </li>
               <li class="footer__item">
-                <a href="hotels.php" class="footer__link">Frequently Asked Questions</a>
+                <a href="hotels.php" class="footer__link"
+                  >Frequently Asked Questions</a
+                >
               </li>
               <li class="footer__item">
-                <a href="hotels.php" class="footer__link">Deals.mu loyalty program</a>
+                <a href="hotels.php" class="footer__link"
+                  >Deals.mu loyalty program</a
+                >
               </li>
               <li class="footer__item">
                 <a href="hotels.php" class="footer__link"
@@ -675,7 +683,9 @@
                 <a href="hotels.php" class="footer__link">Disclaimer</a>
               </li>
               <li class="footer__item">
-                <a href="hotels.php" class="footer__link">Cancellation policy</a>
+                <a href="hotels.php" class="footer__link"
+                  >Cancellation policy</a
+                >
               </li>
               <li class="footer__item">
                 <a href="hotels.php" class="footer__link">Privacy</a>
@@ -752,26 +762,30 @@
               class="footer-form footer__form form"
             >
               <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  minlength="2"
-                  maxlength="20"
-                  required
-                />
+                <div class="group-uno">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    minlength="2"
+                    maxlength="20"
+                    required
+                  />
+                </div>
               </div>
               <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input phone"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  minlength="17"
-                  maxlength="19"
-                  required
-                />
+                <div class="grout-duo">
+                  <input
+                    type="tel"
+                    class="input footer__input phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    minlength="17"
+                    maxlength="19"
+                    required
+                  />
+                </div>
               </div>
               <textarea
                 class="textarea footer__textarea"
