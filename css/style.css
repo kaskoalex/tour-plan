@@ -1256,19 +1256,21 @@ template {
 }
 
 .footer__logo {
-  width: 155px;
+  width: 153px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
+  margin-top: 8px;
 }
 
 .footer__categories {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
+  padding-top: 3px;
 }
 
 .footer__social-network {
@@ -1399,7 +1401,7 @@ template {
   line-height: 22px;
   color: #BDBDBD;
   word-break: break-word;
-  margin-left: -6px;
+  margin-left: -3px;
 }
 
 .footer__icon-wrapper {
@@ -1799,7 +1801,7 @@ template {
   }
   .navbar-top {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
   }
   .navbar__search {
     margin-left: 51px;
@@ -1807,7 +1809,7 @@ template {
   .navbar-menu {
     padding-top: 20px;
     padding-bottom: 22px;
-    padding-left: 16px;
+    padding-left: 14px;
     padding-right: 13px;
   }
   .navbar-menu__link {
@@ -1816,6 +1818,12 @@ template {
   }
   .search__input {
     width: 340px;
+  }
+  .breadcrumb-list {
+    padding: 18px 0;
+  }
+  .breadcrumb-list__item {
+    margin-left: -1px;
   }
   .hotel {
     padding-bottom: 58px;
@@ -1953,8 +1961,8 @@ template {
     -ms-grid-row: 3;
     grid-row: 3;
     grid-column: span 12;
-    margin-top: 31px;
-    margin-left: 3px;
+    margin-top: 29px;
+    margin-left: 2px;
   }
   .footer__contact-form {
     -ms-grid-row: 4;
@@ -1981,9 +1989,13 @@ template {
   .footer-bottom__payments-info {
     grid-column: span 6;
     margin-right: 2px;
+    margin-bottom: 9px;
+  }
+  .footer-bottom__payments-info__link {
+    margin-right: 10px;
   }
   .footer__bottom {
-    margin-top: 56px;
+    margin-top: 53px;
   }
   .footer__link:hover {
     background: #0A223D;
@@ -2324,6 +2336,7 @@ template {
   }
   .hotel {
     padding-bottom: 39px;
+    padding-top: 13px;
   }
   .hotel__slider {
     margin-bottom: 20px;
@@ -2353,7 +2366,7 @@ template {
     margin-top: 20px;
   }
   .booking {
-    padding: 30px 24px 28px 25px;
+    padding: 30px 24px 23px 25px;
   }
   .newsletter {
     padding-top: 76px;
@@ -2549,7 +2562,7 @@ template {
     width: 93%;
   }
   .hotel {
-    padding-top: 10px;
+    padding-top: 13px;
   }
   .hotel-info {
     padding-bottom: 17px;
@@ -2608,7 +2621,7 @@ template {
     margin-right: 7px;
   }
   .activities {
-    padding-bottom: 33px;
+    padding-bottom: 36px;
   }
   .card__title {
     margin-right: 27px;
@@ -2620,8 +2633,8 @@ template {
     margin-left: 0;
   }
   .footer-wrapper {
-    -ms-grid-rows: 100px 139px 140px 194px 245px 396px 271px 80px;
-        grid-template-rows: 100px 139px 140px 194px 245px 396px 271px 80px;
+    -ms-grid-rows: 100px 139px 140px 194px 243px 396px 271px 80px;
+        grid-template-rows: 100px 139px 140px 194px 243px 396px 271px 80px;
     grid-row-gap: 6px;
     grid-column-gap: 1px;
   }
@@ -2646,7 +2659,7 @@ template {
     margin-left: 0;
   }
   .footer__title {
-    margin-bottom: 19px;
+    margin-bottom: 14px;
   }
   .footer__title--inline {
     margin-bottom: 20px;
@@ -2689,7 +2702,7 @@ template {
     grid-column: span 3;
   }
   .footer__form {
-    margin-top: -5px;
+    margin-top: -1px;
   }
   .footer__item--mb-1 {
     margin-bottom: 23px;
@@ -2745,6 +2758,7 @@ template {
   .footer-bottom__text {
     margin-top: 4px;
     margin-bottom: 9px;
+    margin-left: -1px;
   }
   .footer-bottom__bottom {
     margin-top: 52px;
