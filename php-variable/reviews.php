@@ -39,7 +39,7 @@
                   and amenities articles were in corner of gallery which were
                   giving bad feeling. Breakfast was good and support of the
                   staff was also very nice. Location is not good as per
-                  atmosphere, it is very nearby most of the popular places but
+                  atmosphere, it is very nearby most o the popular places but
                   self location in a narrow street is not good. Overall it was a
                   good experience and could recommend.
                 </p>
